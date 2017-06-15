@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     lang: app.dataset.locale
   })
   updateDocumentList();
+  if(getCookie("support")!=null){
+	SUPPORT=getCookie("support");
+  }
 })
 
 function support(){
